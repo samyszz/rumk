@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - R.U.M.O</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".register-type-btn");
+      const forms = document.querySelectorAll(".registration-form");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          forms.forEach((form) => {
+            form.classList.remove("active");
+          });
+
+          const selectedForm = document.getElementById(btn.dataset.form);
+          if (selectedForm) selectedForm.classList.add("active");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content container">
+      <a href="index.html" class="logo-container">
+        <img src="assets/images/locosemborda.png" alt="Logo da R.U.M.O">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hub.html">Hub + Rumo</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="ferramentas.html">Utilitários</a></li>
+          <li><a href="sobre-nos.html">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <div class="profile-icon">
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-container">
+      <h2>Crie sua Conta na R.U.M.O</h2>
+      <p>Junte-se à nossa rede de apoio. O cadastro é rápido e seguro.</p>
+
+      <div class="form-tabs">
+        <button class="tab-btn register-type-btn active" data-form="pf-form">Pessoa Física</button>
+        <button class="tab-btn register-type-btn" data-form="ong-form">ONG / Organização</button>
+        <button class="tab-btn register-type-btn" data-form="pj-form">Pessoa Jurídica</button>
+      </div>
+
+      <form class="registration-form active" id="pf-form">
+        <div class="form-group">
+          <label for="pf-name">Nome Completo</label>
+          <input type="text" id="pf-name" required>
+        </div>
+        <div class="form-group">
+          <label for="pf-email">E-mail</label>
+          <input type="email" id="pf-email" required>
+        </div>
+        <div class="form-group">
+          <label for="pf-country">País de Origem</label>
+          <input type="text" id="pf-country" required>
+        </div>
+        <div class="form-group">
+          <label for="pf-password">Crie uma Senha</label>
+          <input type="password" id="pf-password" required>
+        </div>
+        <button type="submit" class="btn">Cadastrar</button>
+      </form>
+
+      <form class="registration-form" id="ong-form">
+        <div class="form-group">
+          <label for="ong-name">Nome da ONG</label>
+          <input type="text" id="ong-name">
+        </div>
+        <div class="form-group">
+          <label for="ong-email">E-mail institucional</label>
+          <input type="email" id="ong-email">
+        </div>
+        <div class="form-group">
+          <label for="ong-cnpj">CNPJ</label>
+          <input type="text" id="ong-cnpj">
+        </div>
+        <button type="submit" class="btn">Cadastrar ONG</button>
+      </form>
+
+      <form class="registration-form" id="pj-form">
+        <div class="form-group">
+          <label for="pj-company">Nome da Empresa</label>
+          <input type="text" id="pj-company">
+        </div>
+        <div class="form-group">
+          <label for="pj-email">E-mail corporativo</label>
+          <input type="email" id="pj-email">
+        </div>
+        <div class="form-group">
+          <label for="pj-cnpj">CNPJ</label>
+          <input type="text" id="pj-cnpj">
+        </div>
+        <button type="submit" class="btn">Cadastrar Empresa</button>
+      </form>
+
+      <div class="auth-link">
+        <p>Já tem uma conta? <a href="login.html">Faça o login</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content container">
+      <div class="footer-logo">
+        <img src="assets/images/logocborda.png" alt="Logo da R.U.M.O com borda">
+      </div>
+      <div class="footer-links">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="ferramentas.html">Utilitários</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Social Media</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-contact-form">
+        <h4>Vamos conversar?</h4>
+        <form>
+          <input type="email" placeholder="Seu E-mail">
+          <textarea rows="3" placeholder="Sua Mensagem"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

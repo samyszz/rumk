@@ -1,0 +1,343 @@
+/* ===============================
+   R.U.M.O - STYLE GLOBAL
+   Versão aprimorada com a nova paleta de cores
+   =============================== */
+
+:root {
+  --cor-fundo-inicio: #e6eef7;
+  --cor-fundo-meio: #ffffff;
+  --cor-borda: #2c3e50;
+  --cor-fundo-elementos: #fafafa;
+  --cor-texto-escuro: #3b3b3b;
+  --cor-texto-claro: #ffffff;
+  --cor-primaria-hover: #34495e; /* Um tom ligeiramente mais claro que a borda para hover */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, var(--cor-fundo-inicio), var(--cor-fundo-meio), var(--cor-fundo-inicio));
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   CABEÇALHO E NAVEGAÇÃO
+   =============================== */
+header.main-header {
+  background-color: var(--cor-borda);
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 50px;
+  filter: brightness(0) invert(1); /* Deixa a logo branca */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--cor-fundo-elementos);
+  color: var(--cor-texto-escuro);
+}
+
+.profile-icon a {
+  color: var(--cor-texto-claro);
+  font-size: 1.5rem;
+}
+
+/* ===============================
+   BOTÕES
+   =============================== */
+.btn {
+  display: inline-block;
+  background-color: var(--cor-fundo-elementos);
+  color: var(--cor-texto-escuro);
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background-color: var(--cor-borda);
+  color: var(--cor-texto-claro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn.small {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   HERO E CARROSSEL
+   =============================== */
+.hero-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: var(--cor-borda);
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color: var(--cor-texto-escuro);
+    margin-bottom: 2rem;
+}
+
+/* Estilos do Carrossel */
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--cor-fundo-elementos);
+    border: 1px solid var(--cor-borda);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none; /* Escondido por padrão */
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block; /* Mostra o slide ativo */
+}
+
+.carousel-slide i {
+    font-size: 3.5rem;
+    color: var(--cor-borda);
+    margin-bottom: 1rem;
+}
+
+.carousel-slide h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-borda);
+}
+
+.carousel-slide p {
+    font-size: 1.1rem;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: var(--cor-borda);
+}
+
+
+/* ===============================
+   FORMULÁRIOS
+   =============================== */
+.form-container {
+    background-color: var(--cor-fundo-elementos);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--cor-borda);
+    margin-bottom: 1.5rem;
+}
+.form-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    flex-grow: 1;
+    background-color: var(--cor-fundo-elementos);
+    color: var(--cor-texto-escuro);
+    border: 1px solid var(--cor-borda);
+}
+
+.tab-btn.active {
+    background-color: var(--cor-borda);
+    color: var(--cor-texto-claro);
+}
+
+.registration-form {
+    display: none;
+}
+.registration-form.active {
+    display: block;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  background-color: #fff;
+  font-size: 1rem;
+  color: var(--cor-texto-escuro);
+}
+
+
+/* ===============================
+   POSTAGENS E COMUNIDADE
+   =============================== */
+.community-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+#search-bar {
+    width: 80%;
+    padding: 0.8rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 30px;
+}
+
+.post-card {
+  background-color: var(--cor-fundo-elementos);
+  border: 1px solid var(--cor-borda);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.post-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: var(--cor-texto-escuro);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+.main-footer {
+  background-color: var(--cor-borda);
+  color: var(--cor-texto-claro);
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-logo img {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.footer-contact-form input,
+.footer-contact-form textarea {
+  width: 100%;
+  background-color: var(--cor-primaria-hover);
+  border: 1px solid var(--cor-fundo-elementos);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  color: var(--cor-texto-claro);
+}
+
+.footer-contact-form ::placeholder {
+  color: #bdc3c7;
+}

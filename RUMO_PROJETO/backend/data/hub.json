@@ -1,0 +1,32 @@
+{
+  "ongs": [
+    {
+      "id": 1,
+      "nome": "ACNUR - Agência da ONU para Refugiados",
+      "descricao": "Proteção e assistência a refugiados em todo o mundo.",
+      "cidade": "São Paulo",
+      "contato": "https://www.acnur.org/portugues/"
+    },
+    {
+      "id": 2,
+      "nome": "Cáritas Arquidiocesana de São Paulo",
+      "descricao": "Acolhimento, orientação jurídica e integração de refugiados e imigrantes.",
+      "cidade": "São Paulo",
+      "contato": "https://www.caritassp.org.br/"
+    }
+  ],
+  "guias": [
+    {
+      "id": 1,
+      "titulo": "Como obter o CPF para estrangeiros",
+      "resumo": "Um guia passo a passo para a emissão do Cadastro de Pessoas Físicas.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Acesso ao Sistema Único de Saúde (SUS)",
+      "resumo": "Saiba como obter seu cartão do SUS e ter acesso à saúde pública.",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramentas - R.U.M.O</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content container">
+      <a href="index.html" class="logo-container">
+        <img src="assets/images/locosemborda.png" alt="Logo da R.U.M.O">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hub.html">Hub + Rumo</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="ferramentas.html" class="active">Utilitários</a></li>
+          <li><a href="sobre-nos.html">Sobre nós</a></li>
+          <li><a href="cadastro.html" class="btn small">Criar Conta</a></li>
+        </ul>
+      </nav>
+      <div class="profile-icon">
+        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Ferramentas e Utilitários</h1>
+      <p>Recursos que facilitam sua adaptação ao Brasil.</p>
+    </section>
+
+    <section class="tools-grid">
+      <div class="tool-card">
+        <h3>Conversor de Moedas</h3>
+        <p>Taxas de câmbio atualizadas em tempo real.</p>
+        <form class="converter-form">
+          <input type="number" placeholder="Digite o valor">
+          <select>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+          </select>
+          <span>PARA</span>
+          <select>
+            <option value="BRL">Real (BRL)</option>
+          </select>
+          <button type="button" class="btn small">Converter</button>
+          <div class="result">Resultado: R$ 525,00</div>
+        </form>
+      </div>
+
+      <div class="tool-card">
+        <h3>Conversor de Medidas</h3>
+        <p>Adapte-se facilmente aos padrões brasileiros.</p>
+        <form class="converter-form">
+          <input type="number" placeholder="Digite o valor">
+          <select>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="milhas">Milhas (mi)</option>
+            <option value="libras">Libras (lb)</option>
+          </select>
+          <span>PARA</span>
+          <select>
+            <option value="celsius">Celsius (°C)</option>
+            <option value="km">Quilômetros (km)</option>
+            <option value="kg">Quilogramas (kg)</option>
+          </select>
+          <button type="button" class="btn small">Converter</button>
+          <div class="result">Resultado: 21.1 °C</div>
+        </form>
+      </div>
+    </section>
+
+    <section class="tools-grid">
+      <div class="tool-card">
+        <h3>Cofre de Documentos</h3>
+        <p>Digitalize e consulte documentos importantes.</p>
+        <form class="converter-form">
+          <input type="text" placeholder="Nome do Documento">
+          <input type="text" placeholder="Data de Validade">
+          <input type="file" accept="image/*,application/pdf">
+          <button type="submit" class="btn small">Salvar Documento</button>
+        </form>
+      </div>
+
+      <div class="tool-card">
+        <h3>Alterar Idioma</h3>
+        <p>Selecione o idioma de sua preferência.</p>
+        <form class="converter-form">
+          <select>
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+          <button type="button" class="btn small">Alterar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content container">
+      <div class="footer-logo">
+        <img src="assets/images/logocborda.png" alt="Logo da R.U.M.O com borda">
+      </div>
+      <div class="footer-links">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="ferramentas.html">Utilitários</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Social Media</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-contact-form">
+        <h4>Vamos conversar?</h4>
+        <form>
+          <input type="email" placeholder="Seu E-mail">
+          <textarea rows="3" placeholder="Sua Mensagem"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

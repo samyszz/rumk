@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "author": "Maria da Silva",
+    "titulo": "Dúvida sobre renovação do CRNM",
+    "conteudo": "Olá pessoal, meu CRNM vence em 2 meses. Alguém sabe quais são os documentos necessários para a renovação e onde devo ir em São Paulo? Agradeço a ajuda!",
+    "topico": "Processos Legais",
+    "likes": 300,
+    "comments": [],
+    "createdAt": "2025-07-20T11:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "author": "ONG Mãos Abertas",
+    "titulo": "Feirão de Empregos para Refugiados",
+    "conteudo": "Nossa ONG, em parceria com empresas locais, está organizando um feirão de empregos no dia 15/08. Haverá tradutores disponíveis. Endereço: Av. Paulista, 1000. Tragam seus currículos!",
+    "topico": "ONGs e Apoio",
+    "likes": 580,
+    "comments": [],
+    "createdAt": "2025-07-19T15:00:00.000Z"
+  }
+]
